@@ -8,17 +8,23 @@
 
   "editor.tabSize": 2,
   "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true, 
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
-
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
 
   "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "node_modules": true
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "explorer.compactFolders": false,
@@ -31,41 +37,52 @@
   "editor.rulers": [100, 140],
 
   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+    "source.fixAll.eslint": true
   },
 
   "files.associations": {
-      ".sequelizerc": "javascript",
-      ".stylelintrc": "json",
-      ".prettierrc": "json"
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
   },
-
   "window.zoomLevel": 0,
 
   "material-icon-theme.files.associations": {
-      "ormconfig.json": "database",
-      "tsconfig.json": "tune",
-      "*.proto": "3d"
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.proto": "3d"
   },
 
   "material-icon-theme.folders.associations": {
-      "infra": "app",
-      "entities": "class",
-      "schemas": "class",
-      "typeorm": "database",
-      "repositories": "mappings",
-      "http": "container",
-      "migrations": "tools",
-      "modules": "components",
-      "implementations": "core",
-      "dtos": "typescript",
-      "fakes": "mock",
-      "websockets": "pipe",
-      "protos": "pipe",
-      "grpc": "pipe"
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe"
   },
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "explorer.confirmDragAndDrop": false,
-  
-  
+  "gitlens.advanced.messages": {
+    "suppressImproperWorkspaceCasingWarning": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command",
+    "stash-push:command"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  "explorer.confirmDelete": false,
+  "tabnine.experimentalAutoImports": true
 }
