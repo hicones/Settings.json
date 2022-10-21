@@ -22,11 +22,6 @@
     "node_modules": true
   },
 
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
@@ -45,7 +40,6 @@
     ".stylelintrc": "json",
     ".prettierrc": "json"
   },
-  "window.zoomLevel": 0,
 
   "material-icon-theme.files.associations": {
     "ormconfig.json": "database",
@@ -69,9 +63,20 @@
     "protos": "pipe",
     "grpc": "pipe"
   },
+  "eslint.validate": ["javascript"],
   "explorer.confirmDragAndDrop": false,
-  "gitlens.advanced.messages": {
-    "suppressImproperWorkspaceCasingWarning": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "bracketPairColorizer.depreciation-notice": false,
@@ -83,6 +88,5 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.statusBar.enabled": false,
-  "explorer.confirmDelete": false,
-  "tabnine.experimentalAutoImports": true
+  "explorer.confirmDelete": false
 }
